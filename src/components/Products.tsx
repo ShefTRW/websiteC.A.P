@@ -38,11 +38,11 @@ export const Products: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight">
+          <h2 className="text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight animate-slide-up">
             PREMIUM <span className="text-red-500">AUTO PARTS</span>
           </h2>
           <div className="w-24 h-1 bg-red-500 mx-auto mb-8"></div>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto font-medium">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto font-medium animate-fade-in" style={{ animationDelay: '0.3s' }}>
             Professional-grade components engineered for performance, 
             reliability, and longevity. Trust C.A.P. for your most critical automotive needs.
           </p>
@@ -53,7 +53,8 @@ export const Products: React.FC = () => {
           {products.map((product, index) => (
             <div 
               key={product.title}
-              className="group relative bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl overflow-hidden hover:from-gray-700 hover:to-gray-800 transition-all duration-300 transform hover:-translate-y-2 border border-gray-700 hover:border-red-500"
+              className="group relative bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl overflow-hidden hover:from-gray-700 hover:to-gray-800 transition-all duration-300 transform hover:-translate-y-2 border border-gray-700 hover:border-red-500 animate-slide-up"
+              style={{ animationDelay: `${0.5 + index * 0.1}s` }}
             >
               {/* Product Image */}
               <div className="relative h-48 overflow-hidden">
@@ -65,7 +66,7 @@ export const Products: React.FC = () => {
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300"></div>
                 
                 {/* Icon Overlay */}
-                <div className="absolute top-4 right-4 bg-red-600 p-3 rounded-full">
+                <div className="absolute top-4 right-4 bg-red-600 p-3 rounded-full group-hover:bg-red-500 transition-colors duration-300">
                   <product.icon className="h-6 w-6 text-white" />
                 </div>
               </div>
