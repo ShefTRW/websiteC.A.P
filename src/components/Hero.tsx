@@ -49,7 +49,7 @@ export const Hero: React.FC = () => {
         </div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center mt-20">
         {/* Main Heading */}
         <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black text-white mb-8 leading-tight tracking-tight animate-fade-in">
           <span className="block text-red-500 text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 tracking-widest animate-slide-up">
@@ -73,18 +73,11 @@ export const Hero: React.FC = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 animate-slide-up" style={{ animationDelay: '0.8s' }}>
-          <button 
-            onClick={handleWhatsAppClick}
-            className="bg-gradient-to-r from-red-600 to-red-700 text-white px-10 py-5 rounded-lg font-black text-xl hover:from-red-700 hover:to-red-800 transition-all duration-300 transform hover:scale-105 flex items-center space-x-3 shadow-2xl border border-red-500 hover:shadow-red-500/25"
-          >
-            <MessageCircle className="h-6 w-6" />
-            <span>ORDER ON WHATSAPP</span>
-          </button>
           <a 
             href="https://www.instagram.com/commonautoparts?igsh=YWNzZjUxOXFlMTA3"
             target="_blank"
             rel="noopener noreferrer"
-            className="border-2 border-gray-500 text-gray-300 px-10 py-5 rounded-lg font-bold text-xl hover:bg-gray-500 hover:text-black transition-all duration-300 transform hover:scale-105 flex items-center space-x-3 hover:shadow-lg"
+            className="border-2 border-gray-500 text-gray-300 px-10 py-5 rounded-lg font-bold text-xl hover:bg-gray-500 hover:text-black transition-all duration-300 transform hover:scale-105 flex items-center space-x-3 hover:shadow-lg mx-auto"
           >
             <Instagram className="h-6 w-6" />
             <span>FOLLOW US</span>

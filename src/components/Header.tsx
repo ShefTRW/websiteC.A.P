@@ -58,7 +58,7 @@ export const Header: React.FC = () => {
           <div className="hidden lg:block flex-1 flex justify-end">
             <button 
               onClick={handleWhatsAppClick}
-              className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-lg font-bold hover:from-red-700 hover:to-red-800 transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 shadow-lg"
+              className="bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-lg font-bold hover:from-red-700 hover:to-red-800 transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 shadow-lg text-lg"
             >
               <MessageCircle className="h-5 w-5" />
               <span>ORDER NOW</span>
