@@ -31,17 +31,29 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      isScrolled ? 'bg-black/95 backdrop-blur-sm shadow-2xl' : 'bg-transparent'
-    }`}>
+    <>
+      {/* ORDER NOW Button - Fixed Top Right */}
+      <div className="fixed top-4 right-4 z-50">
+        <button 
+          onClick={handleWhatsAppClick}
+          className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-lg font-bold hover:from-red-700 hover:to-red-800 transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 shadow-xl text-sm animate-fade-in"
+        >
+          <MessageCircle className="h-4 w-4" />
+          <span>ORDER NOW</span>
+        </button>
+      </div>
+
+      <header className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
+        isScrolled ? 'bg-black/95 backdrop-blur-sm shadow-2xl' : 'bg-transparent'
+      }`}>
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col">
         {/* Navigation Bar */}
         <div className="flex items-center justify-between h-16">
-          {/* Empty space for logo positioning */}
-          <div className="flex-1"></div>
+          {/* Empty space for centering */}
+          <div className="flex-1 lg:block hidden"></div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8 flex-1 justify-center">
+          <div className="hidden lg:flex items-center space-x-8 justify-center">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -54,16 +66,8 @@ export const Header: React.FC = () => {
             ))}
           </div>
 
-          {/* WhatsApp CTA */}
-          <div className="hidden lg:block flex-1 flex justify-end">
-            <button 
-              onClick={handleWhatsAppClick}
-              className="bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-lg font-bold hover:from-red-700 hover:to-red-800 transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 shadow-lg text-lg"
-            >
-              <MessageCircle className="h-5 w-5" />
-              <span>ORDER NOW</span>
-            </button>
-          </div>
+          {/* Empty space for centering */}
+          <div className="flex-1 lg:block hidden"></div>
 
           {/* Mobile Menu Button */}
           <button
@@ -110,17 +114,11 @@ export const Header: React.FC = () => {
                   {link.name}
                 </a>
               ))}
-              <button 
-                onClick={handleWhatsAppClick}
-                className="w-full bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-lg font-bold hover:from-red-700 hover:to-red-800 transition-all duration-300 flex items-center justify-center space-x-2 mt-4 transform hover:scale-105"
-              >
-                <MessageCircle className="h-5 w-5" />
-                <span>ORDER NOW</span>
-              </button>
             </div>
           </div>
         )}
       </nav>
-    </header>
+      </header>
+    </>
   );
 };
