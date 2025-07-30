@@ -17,23 +17,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- Redirect based on browser language -->
-    <script>
-      const userLang = navigator.language || navigator.userLanguage;
-      if (userLang.startsWith("ru")) {
-        window.location.href = "/ru.html";
-      }
-    </script>
   </head>
   <body>
     <div id="root"></div>
-
-    <!-- Link to Russian version manually as well -->
-    <p style="text-align:center; margin-top: 20px;">
-      <a href="/ru.html">Русская версия сайта</a>
-    </p>
-
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
