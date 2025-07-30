@@ -20,6 +20,13 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // Detect browser language and redirect Russian users
+      const userLang = navigator.language || navigator.userLanguage;
+      if (userLang.toLowerCase().startsWith('ru')) {
+        window.location.href = '/ru.html';
+      }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
