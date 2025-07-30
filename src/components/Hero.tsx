@@ -52,8 +52,8 @@ export const Hero: React.FC = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center mt-20">
         {/* Main Heading */}
         <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black text-white mb-8 leading-tight tracking-tight animate-fade-in">
-          <span className="block text-red-500 text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 tracking-widest animate-slide-up">
-            C.A.P.
+          <span className="block text-blue-500 text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 tracking-widest animate-slide-up">
+            C.A.P
           </span>
           <span className="bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent animate-slide-left">
             ENGINEERED TO PERFORM
@@ -77,7 +77,7 @@ export const Hero: React.FC = () => {
             href="https://www.instagram.com/commonautoparts?igsh=YWNzZjUxOXFlMTA3"
             target="_blank"
             rel="noopener noreferrer"
-            className="border-2 border-gray-500 text-gray-300 px-10 py-5 rounded-lg font-bold text-xl hover:bg-gray-500 hover:text-black transition-all duration-300 transform hover:scale-105 flex items-center space-x-3 hover:shadow-lg mx-auto"
+            className="border-2 border-blue-500 text-blue-300 px-10 py-5 rounded-lg font-bold text-xl hover:bg-blue-500 hover:text-white transition-all duration-300 transform hover:scale-105 flex items-center space-x-3 hover:shadow-lg mx-auto"
           >
             <Instagram className="h-6 w-6" />
             <span>FOLLOW US</span>
@@ -86,7 +86,7 @@ export const Hero: React.FC = () => {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce" style={{ animationDelay: '1s' }}>
-          <ArrowDown className="h-8 w-8 text-gray-500" />
+          <ArrowDown className="h-8 w-8 text-blue-400" />
         </div>
       </div>
     </section>

@@ -22,9 +22,9 @@ export const Contact: React.FC = () => {
           {/* Header */}
           <div className="mb-16">
             <h2 className="text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight animate-slide-up">
-              GET IN <span className="text-red-500">TOUCH</span>
+              GET IN <span className="text-blue-500">TOUCH</span>
             </h2>
-            <div className="w-24 h-1 bg-red-500 mx-auto mb-8"></div>
+            <div className="w-24 h-1 bg-blue-500 mx-auto mb-8"></div>
             <p className="text-xl text-gray-400 font-medium animate-fade-in" style={{ animationDelay: '0.3s' }}>
               Ready to upgrade your vehicle's performance? Contact us now for expert advice and competitive pricing.
             </p>
@@ -35,7 +35,7 @@ export const Contact: React.FC = () => {
             {/* WhatsApp */}
             <div 
               onClick={handleWhatsAppClick}
-              className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group animate-slide-left"
+              className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group animate-slide-left"
               style={{ animationDelay: '0.5s' }}
             >
               <div className="bg-green-600 p-4 rounded-full w-16 h-16 mx-auto mb-6 group-hover:bg-green-500 transition-colors duration-300">
@@ -55,19 +55,19 @@ export const Contact: React.FC = () => {
             {/* Email */}
             <div 
               onClick={handleEmailClick}
-              className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group animate-slide-right"
+              className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group animate-slide-right"
               style={{ animationDelay: '0.5s' }}
             >
-              <div className="bg-red-600 p-4 rounded-full w-16 h-16 mx-auto mb-6 group-hover:bg-red-500 transition-colors duration-300">
+              <div className="bg-blue-600 p-4 rounded-full w-16 h-16 mx-auto mb-6 group-hover:bg-blue-500 transition-colors duration-300">
                 <Mail className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-red-400 transition-colors duration-300">
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors duration-300">
                 Email Us
               </h3>
               <p className="text-gray-400 mb-4">
                 Send us your requirements and inquiries
               </p>
-              <p className="text-red-400 font-semibold">
+              <p className="text-blue-400 font-semibold">
                 commonautoparts.uae@gmail.com
               </p>
             </div>
@@ -76,26 +76,26 @@ export const Contact: React.FC = () => {
           {/* Additional Info */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 animate-fade-in" style={{ animationDelay: '0.8s' }}>
             <div className="flex items-center justify-center space-x-4 text-gray-400">
-              <MapPin className="h-6 w-6 text-red-500" />
+              <MapPin className="h-6 w-6 text-blue-500" />
               <span className="font-medium">Dubai, United Arab Emirates</span>
             </div>
             <div className="flex items-center justify-center space-x-4 text-gray-400">
-              <Clock className="h-6 w-6 text-red-500" />
+              <Clock className="h-6 w-6 text-blue-500" />
               <span className="font-medium">Available 24/7 for urgent orders</span>
             </div>
           </div>
 
           {/* Final CTA */}
-          <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-8 lg:p-12 animate-slide-up" style={{ animationDelay: '1s' }}>
+          <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 lg:p-12 animate-slide-up" style={{ animationDelay: '1s' }}>
             <h3 className="text-3xl lg:text-4xl font-black text-white mb-6 animate-pulse-slow">
-              EXPERIENCE THE C.A.P. DIFFERENCE
+              EXPERIENCE THE C.A.P DIFFERENCE
             </h3>
-            <p className="text-xl text-red-100 mb-8 font-medium">
-              Join thousands of satisfied customers who trust C.A.P. for their automotive needs
+            <p className="text-xl text-blue-100 mb-8 font-medium">
+              Join thousands of satisfied customers who trust C.A.P for their automotive needs
             </p>
             <button 
               onClick={handleWhatsAppClick}
-              className="bg-white text-red-600 px-12 py-6 rounded-xl font-black text-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 flex items-center space-x-4 mx-auto shadow-2xl hover:shadow-white/25"
+              className="bg-white text-blue-600 px-12 py-6 rounded-xl font-black text-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 flex items-center space-x-4 mx-auto shadow-2xl hover:shadow-white/25"
             >
               <MessageCircle className="h-8 w-8" />
               <span>START YOUR ORDER NOW</span>
@@ -108,11 +108,11 @@ export const Contact: React.FC = () => {
           <div className="flex items-center justify-center space-x-4 mb-4">
             <img 
               src="/C.A.P logo.jpg" 
-              alt="C.A.P. Logo" 
-              className="h-10 w-10 rounded-full object-cover border border-red-600"
+              alt="C.A.P Logo" 
+              className="h-10 w-10 rounded-full object-cover border border-blue-600"
             />
             <div>
-              <h4 className="text-xl font-bold text-white">C.A.P.</h4>
+              <h4 className="text-xl font-bold text-white">C.A.P</h4>
               <p className="text-sm text-gray-400">Common Auto Parts</p>
             </div>
           </div>

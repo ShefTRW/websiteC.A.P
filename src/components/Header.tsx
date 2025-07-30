@@ -36,7 +36,7 @@ export const Header: React.FC = () => {
       <div className="fixed top-4 right-4 z-50">
         <button 
           onClick={handleWhatsAppClick}
-          className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-lg font-bold hover:from-red-700 hover:to-red-800 transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 shadow-xl text-sm animate-fade-in"
+          className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg font-bold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 shadow-xl text-sm animate-fade-in"
         >
           <MessageCircle className="h-4 w-4" />
           <span>ORDER NOW</span>
@@ -58,10 +58,10 @@ export const Header: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-gray-300 hover:text-red-500 font-semibold transition-all duration-300 relative group tracking-wide transform hover:scale-105"
+                className="text-gray-300 hover:text-blue-500 font-semibold transition-all duration-300 relative group tracking-wide transform hover:scale-105"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
           </div>
@@ -82,16 +82,16 @@ export const Header: React.FC = () => {
         <div className="flex items-center justify-center py-4 animate-fade-in">
           <div className="flex items-center space-x-4 transform transition-all duration-500 hover:scale-105">
             <div className="relative">
-              <div className="absolute inset-0 bg-red-600/20 rounded-full blur-md"></div>
+              <div className="absolute inset-0 bg-blue-600/20 rounded-full blur-md"></div>
               <img 
                 src="/C.A.P logo.jpg" 
-                alt="C.A.P. Logo" 
-                className="relative h-16 w-16 rounded-full object-cover border-2 border-red-600 shadow-xl transition-all duration-300 hover:border-red-400"
+                alt="C.A.P Logo" 
+                className="relative h-16 w-16 rounded-full object-cover border-2 border-blue-600 shadow-xl transition-all duration-300 hover:border-blue-400"
               />
             </div>
             <div>
               <h1 className="text-3xl font-black text-white tracking-tight animate-slide-left">
-                C.A.P.
+                C.A.P
               </h1>
               <p className="text-sm text-gray-400 font-medium tracking-wider animate-slide-right">
                 COMMON AUTO PARTS
@@ -108,7 +108,7 @@ export const Header: React.FC = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="block text-gray-300 hover:text-red-500 font-semibold py-2 transition-all duration-300 transform hover:translate-x-2"
+                  className="block text-gray-300 hover:text-blue-500 font-semibold py-2 transition-all duration-300 transform hover:translate-x-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}

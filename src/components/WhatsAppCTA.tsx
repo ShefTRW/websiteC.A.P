@@ -21,6 +21,7 @@ export const WhatsAppCTA: React.FC = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-red-600/90 via-red-700/90 to-red-600/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/90 via-blue-700/90 to-blue-600/90"></div>
       </div>
       
       {/* Background Pattern */}
@@ -42,12 +43,12 @@ export const WhatsAppCTA: React.FC = () => {
           </h2>
           
           {/* Subheading */}
-          <p className="text-2xl lg:text-3xl text-red-100 mb-6 font-bold animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <p className="text-2xl lg:text-3xl text-blue-100 mb-6 font-bold animate-fade-in" style={{ animationDelay: '0.3s' }}>
             Contact us now on WhatsApp for instant orders and inquiries
           </p>
           
           {/* Description */}
-          <p className="text-lg text-red-100 mb-12 max-w-2xl mx-auto leading-relaxed animate-slide-left" style={{ animationDelay: '0.5s' }}>
+          <p className="text-lg text-blue-100 mb-12 max-w-2xl mx-auto leading-relaxed animate-slide-left" style={{ animationDelay: '0.5s' }}>
             Get immediate assistance, product recommendations, and competitive pricing. 
             Our experts are ready to help you find the perfect parts for your vehicle.
           </p>
@@ -56,7 +57,7 @@ export const WhatsAppCTA: React.FC = () => {
           <div className="flex justify-center animate-slide-up" style={{ animationDelay: '0.8s' }}>
             <button 
               onClick={handleWhatsAppClick}
-              className="bg-white text-red-600 px-12 py-6 rounded-xl font-black text-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 flex items-center space-x-4 shadow-2xl border-2 border-white hover:shadow-white/25"
+              className="bg-white text-blue-600 px-12 py-6 rounded-xl font-black text-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 flex items-center space-x-4 shadow-2xl border-2 border-white hover:shadow-white/25"
             >
               <MessageCircle className="h-8 w-8" />
               <span>MESSAGE ON WHATSAPP</span>
@@ -64,9 +65,9 @@ export const WhatsAppCTA: React.FC = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="mt-12 text-red-100 animate-fade-in" style={{ animationDelay: '1s' }}>
+          <div className="mt-12 text-blue-100 animate-fade-in" style={{ animationDelay: '1s' }}>
             <p className="text-lg font-semibold mb-2 animate-pulse-slow">Available 24/7 for urgent orders</p>
-            <p className="text-red-200">Response time: Usually within 5 minutes</p>
+            <p className="text-blue-200">Response time: Usually within 5 minutes</p>
           </div>
         </div>
       </div>

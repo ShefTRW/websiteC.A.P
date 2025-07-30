@@ -39,12 +39,12 @@ export const Products: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight animate-slide-up">
-            PREMIUM <span className="text-red-500">AUTO PARTS</span>
+            PREMIUM <span className="text-blue-500">AUTO PARTS</span>
           </h2>
-          <div className="w-24 h-1 bg-red-500 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-blue-500 mx-auto mb-8"></div>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto font-medium animate-fade-in" style={{ animationDelay: '0.3s' }}>
             Professional-grade components engineered for performance, 
-            reliability, and longevity. Trust C.A.P. for your most critical automotive needs.
+            reliability, and longevity. Trust C.A.P for your most critical automotive needs.
           </p>
         </div>
 
@@ -53,7 +53,7 @@ export const Products: React.FC = () => {
           {products.map((product, index) => (
             <div 
               key={product.title}
-              className="group relative bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl overflow-hidden hover:from-gray-700 hover:to-gray-800 transition-all duration-300 transform hover:-translate-y-2 border border-gray-700 hover:border-red-500 animate-slide-up"
+              className="group relative bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl overflow-hidden hover:from-gray-700 hover:to-gray-800 transition-all duration-300 transform hover:-translate-y-2 border border-gray-700 hover:border-blue-500 animate-slide-up"
               style={{ animationDelay: `${0.5 + index * 0.1}s` }}
             >
               {/* Product Image */}
@@ -66,14 +66,14 @@ export const Products: React.FC = () => {
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300"></div>
                 
                 {/* Icon Overlay */}
-                <div className="absolute top-4 right-4 bg-red-600 p-3 rounded-full group-hover:bg-red-500 transition-colors duration-300">
+                <div className="absolute top-4 right-4 bg-blue-600 p-3 rounded-full group-hover:bg-blue-500 transition-colors duration-300">
                   <product.icon className="h-6 w-6 text-white" />
                 </div>
               </div>
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-400 transition-colors duration-300">
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">
                   {product.title}
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
@@ -82,7 +82,7 @@ export const Products: React.FC = () => {
               </div>
 
               {/* Hover Effect Border */}
-              <div className="absolute inset-0 border-2 border-transparent group-hover:border-red-500 rounded-xl transition-colors duration-300 pointer-events-none"></div>
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500 rounded-xl transition-colors duration-300 pointer-events-none"></div>
             </div>
           ))}
         </div>

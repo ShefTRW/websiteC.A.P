@@ -8,7 +8,7 @@ import { Contact } from './components/Contact';
 
 /**
  * Main App Component
- * Premium auto parts website for C.A.P. (Common Auto Parts)
+ * Premium auto parts website for C.A.P (Common Auto Parts)
  * Bold, masculine design focused on engine oils and quality parts
  */
 function App() {
