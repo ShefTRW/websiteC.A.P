@@ -32,14 +32,14 @@ export const HeaderRu: React.FC = () => {
 
   return (
     <>
-      {/* ORDER NOW Button - Fixed Top Right */}
-      <div className="fixed top-4 right-4 z-50">
+      {/* WhatsApp Button - Fixed Bottom Right */}
+      <div className="fixed bottom-4 right-4 z-50">
         <button 
           onClick={handleWhatsAppClick}
-          className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg font-bold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 shadow-xl text-sm animate-fade-in"
+          className="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-lg font-bold hover:from-green-600 hover:to-green-700 transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 shadow-xl text-sm animate-fade-in"
         >
           <MessageCircle className="h-4 w-4" />
-          <span>ЗАКАЗАТЬ</span>
+          <span>WhatsApp</span>
         </button>
       </div>
 

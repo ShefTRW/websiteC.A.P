@@ -39,8 +39,7 @@ export const WhyChooseRu: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-blue-500 mx-auto mb-8"></div>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto font-medium animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            Когда производительность и надежность имеют значение, профессионалы доверяют C.A.P 
-            за превосходное качество и непревзойденный сервис.
+            За высокий уровень сервиса, конкурирующие цены для вашего рынка, быстрая доставка.
           </p>
         </div>
 
@@ -68,23 +67,6 @@ export const WhyChooseRu: React.FC = () => {
           ))}
         </div>
 
-        {/* Stats Section */}
-        <div className="bg-gradient-to-r from-gray-900 to-black rounded-2xl p-8 lg:p-12 border border-gray-800 animate-fade-in" style={{ animationDelay: '1s' }}>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="border-r border-gray-700 last:border-r-0">
-              <div className="text-4xl lg:text-6xl font-black text-blue-500 mb-2 animate-pulse-slow">15+</div>
-              <div className="text-gray-400 font-semibold tracking-wide">ЛЕТ ОПЫТА</div>
-            </div>
-            <div className="border-r border-gray-700 last:border-r-0">
-              <div className="text-4xl lg:text-6xl font-black text-blue-500 mb-2 animate-pulse-slow" style={{ animationDelay: '0.2s' }}>50K+</div>
-              <div className="text-gray-400 font-semibold tracking-wide">ДОВОЛЬНЫХ КЛИЕНТОВ</div>
-            </div>
-            <div>
-              <div className="text-4xl lg:text-6xl font-black text-blue-500 mb-2 animate-pulse-slow" style={{ animationDelay: '0.4s' }}>24/7</div>
-              <div className="text-gray-400 font-semibold tracking-wide">ПОДДЕРЖКА WHATSAPP</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

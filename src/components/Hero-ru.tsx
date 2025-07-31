@@ -72,17 +72,7 @@ export const HeroRu: React.FC = () => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 animate-slide-up" style={{ animationDelay: '0.8s' }}>
-          <a 
-            href="https://www.instagram.com/commonautoparts?igsh=YWNzZjUxOXFlMTA3"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border-2 border-blue-500 text-blue-300 px-10 py-5 rounded-lg font-bold text-xl hover:bg-blue-500 hover:text-white transition-all duration-300 transform hover:scale-105 flex items-center space-x-3 hover:shadow-lg mx-auto"
-          >
-            <Instagram className="h-6 w-6" />
-            <span>ПОДПИСАТЬСЯ</span>
-          </a>
-        </div>
+        <div className="mb-16"></div>
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce" style={{ animationDelay: '1s' }}>

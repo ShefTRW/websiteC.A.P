@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Phone, MapPin, Clock, Mail } from 'lucide-react';
+import { MessageCircle, Phone, MapPin, Clock, Mail, Instagram, Send } from 'lucide-react';
 
 /**
  * Contact Component - Russian Version
@@ -15,6 +15,14 @@ export const ContactRu: React.FC = () => {
     window.open('mailto:commonautoparts.uae@gmail.com', '_self');
   };
 
+  const handleInstagramClick = () => {
+    window.open('https://www.instagram.com/commonautoparts?igsh=YWNzZjUxOXFlMTA3', '_blank');
+  };
+
+  const handleTelegramClick = () => {
+    window.open('https://t.me/+971561747182', '_blank');
+  };
+
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-gray-900 to-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,59 +30,99 @@ export const ContactRu: React.FC = () => {
           {/* Header */}
           <div className="mb-16">
             <h2 className="text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight animate-slide-up">
-              СВЯЖИТЕСЬ <span className="text-blue-500">С НАМИ</span>
+              СВЯЖИТЕСЬ С НАМИ
             </h2>
+            <h3 className="text-3xl lg:text-5xl font-black text-blue-500 mb-6 tracking-tight animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              ЧЕРЕЗ
+            </h3>
             <div className="w-24 h-1 bg-blue-500 mx-auto mb-8"></div>
-            <p className="text-xl text-gray-400 font-medium animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              Готовы улучшить производительность вашего автомобиля? Свяжитесь с нами сейчас для экспертных советов и конкурентных цен.
-            </p>
           </div>
 
           {/* Contact Methods */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {/* WhatsApp */}
             <div 
               onClick={handleWhatsAppClick}
-              className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group animate-slide-left"
+              className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-xl border border-gray-700 hover:border-green-500 transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group animate-slide-left"
               style={{ animationDelay: '0.5s' }}
             >
               <div className="bg-green-600 p-4 rounded-full w-16 h-16 mx-auto mb-6 group-hover:bg-green-500 transition-colors duration-300">
                 <MessageCircle className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-green-400 transition-colors duration-300">
-                Заказы через WhatsApp
+                WhatsApp
               </h3>
               <p className="text-gray-400 mb-4">
-                Мгновенные сообщения для быстрых заказов и запросов
+                Мгновенные заказы
               </p>
               <p className="text-green-400 font-semibold">
-                +971 56 174 71 82
+                +971 56 174 7182
+              </p>
+            </div>
+
+            {/* Instagram */}
+            <div 
+              onClick={handleInstagramClick}
+              className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-xl border border-gray-700 hover:border-pink-500 transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group animate-slide-left"
+              style={{ animationDelay: '0.6s' }}
+            >
+              <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-4 rounded-full w-16 h-16 mx-auto mb-6 group-hover:from-purple-600 group-hover:to-pink-600 transition-colors duration-300">
+                <Instagram className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-pink-400 transition-colors duration-300">
+                Instagram
+              </h3>
+              <p className="text-gray-400 mb-4">
+                Наши новости и продукты
+              </p>
+              <p className="text-pink-400 font-semibold">
+                @commonautoparts
+              </p>
+            </div>
+
+            {/* Telegram */}
+            <div 
+              onClick={handleTelegramClick}
+              className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group animate-slide-right"
+              style={{ animationDelay: '0.7s' }}
+            >
+              <div className="bg-blue-500 p-4 rounded-full w-16 h-16 mx-auto mb-6 group-hover:bg-blue-400 transition-colors duration-300">
+                <Send className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors duration-300">
+                Telegram
+              </h3>
+              <p className="text-gray-400 mb-4">
+                Быстрые сообщения
+              </p>
+              <p className="text-blue-400 font-semibold">
+                +971 56 174 7182
               </p>
             </div>
 
             {/* Email */}
             <div 
               onClick={handleEmailClick}
-              className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group animate-slide-right"
-              style={{ animationDelay: '0.5s' }}
+              className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group animate-slide-right"
+              style={{ animationDelay: '0.8s' }}
             >
-              <div className="bg-blue-600 p-4 rounded-full w-16 h-16 mx-auto mb-6 group-hover:bg-blue-500 transition-colors duration-300">
+              <div className="bg-red-600 p-4 rounded-full w-16 h-16 mx-auto mb-6 group-hover:bg-red-500 transition-colors duration-300">
                 <Mail className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors duration-300">
-                Напишите нам
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-red-400 transition-colors duration-300">
+                Электронная почта
               </h3>
               <p className="text-gray-400 mb-4">
-                Отправьте нам ваши требования и запросы
+                Официальные запросы
               </p>
-              <p className="text-blue-400 font-semibold">
+              <p className="text-red-400 font-semibold">
                 commonautoparts.uae@gmail.com
               </p>
             </div>
           </div>
 
           {/* Additional Info */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 animate-fade-in" style={{ animationDelay: '0.8s' }}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 animate-fade-in" style={{ animationDelay: '1s' }}>
             <div className="flex items-center justify-center space-x-4 text-gray-400">
               <MapPin className="h-6 w-6 text-blue-500" />
               <span className="font-medium">Дубай, Объединенные Арабские Эмираты</span>
@@ -86,7 +134,7 @@ export const ContactRu: React.FC = () => {
           </div>
 
           {/* Final CTA */}
-          <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 lg:p-12 animate-slide-up" style={{ animationDelay: '1s' }}>
+          <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 lg:p-12 animate-slide-up" style={{ animationDelay: '1.2s' }}>
             <h3 className="text-3xl lg:text-4xl font-black text-white mb-6 animate-pulse-slow">
               ПОЧУВСТВУЙТЕ РАЗНИЦУ C.A.P
             </h3>
@@ -104,7 +152,7 @@ export const ContactRu: React.FC = () => {
         </div>
 
         {/* Footer */}
-        <div className="border-t border-gray-800 mt-16 pt-8 text-center animate-fade-in" style={{ animationDelay: '1.2s' }}>
+        <div className="border-t border-gray-800 mt-16 pt-8 text-center animate-fade-in" style={{ animationDelay: '1.4s' }}>
           <div className="flex items-center justify-center space-x-4 mb-4">
             <img 
               src="/C.A.P logo.jpg" 

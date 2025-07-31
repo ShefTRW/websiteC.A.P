@@ -18,7 +18,6 @@ function AppRu() {
       <main>
         <HeroRu />
         <ProductsRu />
-        <WhatsAppCTARu />
         <WhyChooseRu />
         <ContactRu />
       </main>
