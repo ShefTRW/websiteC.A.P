@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Truck, Award, Users } from 'lucide-react';
+import { CreditCard, Truck, Award, Users } from 'lucide-react';
 
 /**
  * WhyChoose Component - Russian Version
@@ -8,9 +8,9 @@ import { Shield, Truck, Award, Users } from 'lucide-react';
 export const WhyChooseRu: React.FC = () => {
   const reasons = [
     {
-      icon: Shield,
-      title: "Высокопроизводительные Масла",
-      description: "Премиальные синтетические и обычные масла от проверенных производителей"
+      icon: CreditCard,
+      title: "Удобная Оплата",
+      description: "Удобная оплата через Alif и DC, а также другие популярные способы оплаты для вашего удобства"
     },
     {
       icon: Award,
