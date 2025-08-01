@@ -52,12 +52,6 @@ export const ContactRu: React.FC = () => {
               <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-green-400 transition-colors duration-300">
                 WhatsApp
               </h3>
-              <p className="text-gray-400 mb-4">
-                Мгновенные заказы
-              </p>
-              <p className="text-green-400 font-semibold">
-                +971 56 174 7182
-              </p>
             </div>
 
             {/* Instagram */}
@@ -72,12 +66,6 @@ export const ContactRu: React.FC = () => {
               <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-pink-400 transition-colors duration-300">
                 Instagram
               </h3>
-              <p className="text-gray-400 mb-4">
-                Наши новости и продукты
-              </p>
-              <p className="text-pink-400 font-semibold">
-                @commonautoparts
-              </p>
             </div>
 
             {/* Telegram */}
@@ -92,12 +80,6 @@ export const ContactRu: React.FC = () => {
               <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors duration-300">
                 Telegram
               </h3>
-              <p className="text-gray-400 mb-4">
-                Быстрые сообщения
-              </p>
-              <p className="text-blue-400 font-semibold">
-                +971 56 174 7182
-              </p>
             </div>
 
             {/* Email */}
@@ -112,12 +94,6 @@ export const ContactRu: React.FC = () => {
               <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-red-400 transition-colors duration-300">
                 Электронная почта
               </h3>
-              <p className="text-gray-400 mb-4">
-                Официальные запросы
-              </p>
-              <p className="text-red-400 font-semibold">
-                commonautoparts.uae@gmail.com
-              </p>
             </div>
           </div>
 
@@ -133,22 +109,6 @@ export const ContactRu: React.FC = () => {
             </div>
           </div>
 
-          {/* Final CTA */}
-          <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 lg:p-12 animate-slide-up" style={{ animationDelay: '1.2s' }}>
-            <h3 className="text-3xl lg:text-4xl font-black text-white mb-6 animate-pulse-slow">
-              ПОЧУВСТВУЙТЕ РАЗНИЦУ C.A.P
-            </h3>
-            <p className="text-xl text-blue-100 mb-8 font-medium">
-              Присоединяйтесь к тысячам довольных клиентов, которые доверяют C.A.P для своих автомобильных потребностей
-            </p>
-            <button 
-              onClick={handleWhatsAppClick}
-              className="bg-white text-blue-600 px-12 py-6 rounded-xl font-black text-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 flex items-center space-x-4 mx-auto shadow-2xl hover:shadow-white/25"
-            >
-              <MessageCircle className="h-8 w-8" />
-              <span>НАЧАТЬ ЗАКАЗ СЕЙЧАС</span>
-            </button>
-          </div>
         </div>
 
         {/* Footer */}
@@ -165,7 +125,7 @@ export const ContactRu: React.FC = () => {
             </div>
           </div>
           <p className="text-gray-500 text-sm">
-            © 2024 Common Auto Parts. Все права защищены. | Создано для Производительности. Построено на Века.
+            © 2025 Common Auto Parts. Все права защищены. | Создано для Производительности. Надежность и Качество.
           </p>
         </div>
       </div>

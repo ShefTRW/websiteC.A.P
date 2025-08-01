@@ -79,21 +79,21 @@ export const HeaderRu: React.FC = () => {
         </div>
         
         {/* Logo Section - Below Navigation */}
-        <div className="flex items-center justify-center py-4 animate-fade-in">
-          <div className="flex items-center space-x-4 transform transition-all duration-500 hover:scale-105">
+        <div className="flex items-start justify-start py-6 pl-4 animate-fade-in">
+          <div className="flex items-center space-x-6 transform transition-all duration-500 hover:scale-105">
             <div className="relative">
               <div className="absolute inset-0 bg-blue-600/20 rounded-full blur-md"></div>
               <img 
                 src="/C.A.P logo.jpg" 
                 alt="C.A.P Логотип" 
-                className="relative h-16 w-16 rounded-full object-cover border-2 border-blue-600 shadow-xl transition-all duration-300 hover:border-blue-400"
+                className="relative h-40 w-40 rounded-full object-cover border-4 border-blue-600 shadow-xl transition-all duration-300 hover:border-blue-400"
               />
             </div>
             <div>
-              <h1 className="text-3xl font-black text-white tracking-tight animate-slide-left">
+              <h1 className="text-8xl font-black text-white tracking-widest animate-slide-left">
                 C.A.P
               </h1>
-              <p className="text-sm text-gray-400 font-medium tracking-wider animate-slide-right">
+              <p className="text-4xl text-gray-400 font-bold tracking-widest animate-slide-right">
                 COMMON AUTO PARTS
               </p>
             </div>

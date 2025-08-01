@@ -62,13 +62,13 @@ export const HeroRu: React.FC = () => {
 
         {/* Tagline */}
         <div className="text-2xl sm:text-3xl lg:text-4xl text-gray-300 mb-8 font-bold tracking-wide animate-slide-right">
-          ПОСТРОЕНО НА ВЕКА
+          НАДЕЖНОСТЬ И КАЧЕСТВО
         </div>
 
         {/* Description */}
         <p className="text-lg sm:text-xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed font-medium animate-fade-in" style={{ animationDelay: '0.5s' }}>
-          Премиальные моторные масла, высокопроизводительные фильтры и основные автозапчасти. 
-          Когда качество имеет значение, профессионалы выбирают C.A.P для превосходной производительности и надежности.
+          Профессиональные компоненты, созданные для производительности, 
+          надежности и долговечности. Доверьтесь C.A.P для ваших самых важных автомобильных потребностей.
         </p>
 
         {/* CTA Buttons */}
